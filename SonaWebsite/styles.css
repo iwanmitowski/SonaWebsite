@@ -1,0 +1,140 @@
+/* https://mycolor.space/?hex=%234F3F52&sub=1 */
+
+*{
+    padding:0px;
+    margin:0px;
+    list-style: none;
+	text-decoration: none;
+}
+
+/* General Settings */
+
+body{
+    font-family: 'Crete Round' ;
+}
+h1{
+    font-size:3.5em;
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+h2{
+    font-size: 2.4em;
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+h3{
+    font-size: 1.5em;
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+p{
+    color:#FFE8FF;
+}
+
+/* Header Settings */
+
+header hgroup{
+    padding-top:20em;
+    font-style: italic;
+}
+.main-header{
+    height: 100vh;
+}
+#home-header-background{
+    background-image: url(images/Sona-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#lore-header-background{
+    background-image: url(images/SonaShow.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Main Settings */
+    
+main{
+    background: rgb(121,86,93);
+    background: linear-gradient(355deg, rgba(121,86,93,1) 0%, rgba(110,79,88,1) 4%, rgba(106,77,87,1) 9%, rgba(86,110,142,1) 28%, rgba(79,67,91,1) 70%, rgba(78,60,76,1) 91%);
+    
+}
+
+/* Nav Settings */
+
+.main-nav{
+    background: rgb(121,86,93);
+    background: linear-gradient(162deg, rgba(121,86,93,1) 0%, rgba(110,79,88,1) 10%, rgba(106,77,87,1) 18%, rgba(79,61,76,1) 38%, rgba(79,67,91,1) 96%, rgba(78,60,76,1) 100%);
+}
+.main-nav ul{
+    padding: 10px;
+    
+}
+.main-nav ul li{
+    list-style-type: none;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding:15px;
+    background-color: rgba(79,137,164,0.5);
+    box-shadow: 1px 1px 5px black;
+}
+.main-nav ul li a{
+    color: white;
+}
+.main-nav{
+    text-align: center;
+}
+
+/* Section Settings */
+
+main article{
+    margin: 0 auto;
+    width: 80%;
+}
+article figure img{
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+    width: fit-content;
+    max-width: 440px;
+    border:1px solid #fff;
+}
+article p{
+    display: block;
+    margin: 15px auto;
+    width: 95%;
+    text-align: justify;
+}
+article .ability-icon{
+    width: 17px;
+    margin-right: 5px;
+}
+section h2{
+    margin: 0 0 15px 0;
+}
+
+
+
+/* Footer Settings */
+
+footer{
+    background-color: rgba(255,255,255, 0.5);
+}
+footer section{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 17px;
+    color:#566E8E;
+}
