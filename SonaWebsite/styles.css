@@ -1,4 +1,5 @@
 /* https://mycolor.space/?hex=%234F3F52&sub=1 */
+/* To add alt text to the images */
 
 *{
     padding:0px;
@@ -8,76 +9,98 @@
 }
 
 /* General Settings */
+html{
+    scroll-behavior:smooth;
+}
 
 body{
-    font-family: 'Crete Round' ;
+    font-family: 'Crete Round';
+    background: rgb(121,86,93);
+    background: linear-gradient(355deg, rgba(121,86,93,1) 0%, rgba(110,79,88,1) 4%, rgba(106,77,87,1) 9%, rgba(86,110,142,1) 28%, rgba(79,67,91,1) 70%, rgba(78,60,76,1) 91%);
 }
+
+p{
+    color:#FFE8FF;
+}
+
 h1{
     font-size:3.5em;
     color:white;
     text-align: center;
     text-shadow: 2px 2px 5px black;
 }
+
 h2{
     font-size: 2.4em;
     color:white;
     text-align: center;
     text-shadow: 2px 2px 5px black;
 }
+
 h3{
     font-size: 1.5em;
     color:white;
     text-align: center;
     text-shadow: 2px 2px 5px black;
 }
-p{
-    color:#FFE8FF;
-}
+
 
 /* Header Settings */
+
 
 header hgroup{
     padding-top:20em;
     font-style: italic;
 }
+
 .main-header{
     height: 100vh;
 }
-#home-header-background{
+
+#home-header-background,
+#lore-header-background,
+#skins-header-background,
+#coaching-header-background
+{
     background-image: url(images/Sona-min.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 #lore-header-background{
     background-image: url(images/SonaShow.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-/* Main Settings */
-    
-main{
-    background: rgb(121,86,93);
-    background: linear-gradient(355deg, rgba(121,86,93,1) 0%, rgba(110,79,88,1) 4%, rgba(106,77,87,1) 9%, rgba(86,110,142,1) 28%, rgba(79,67,91,1) 70%, rgba(78,60,76,1) 91%);
-    
+
+#skins-header-background{
+    background-image: url(images/SonaSkins.jpg);
+    background-position:top right;
+    background-position: 70% 80%;
+}
+#coaching-header-background{
+    background-image: url(images/SonaCoaching.jpg);
 }
 
 /* Nav Settings */
 
+
 .main-nav{
     background: rgb(121,86,93);
     background: linear-gradient(162deg, rgba(121,86,93,1) 0%, rgba(110,79,88,1) 10%, rgba(106,77,87,1) 18%, rgba(79,61,76,1) 38%, rgba(79,67,91,1) 96%, rgba(78,60,76,1) 100%);
+    text-align: center;
 }
+
 .main-nav ul{
     padding: 10px;
+    padding-top: 25px;
+    
     
 }
+
 .main-nav ul li{
     list-style-type: none;
     border: 1px solid white;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -85,55 +108,119 @@ main{
     background-color: rgba(79,137,164,0.5);
     box-shadow: 1px 1px 5px black;
 }
+
 .main-nav ul li a{
     color: white;
 }
-.main-nav{
-    text-align: center;
-}
+
 
 /* Section Settings */
+
 
 main article{
     margin: 0 auto;
     width: 80%;
 }
+
 article figure img{
     display: block;
     margin: 15px auto;
     width: 100%;
-    width: fit-content;
-    max-width: 440px;
     border:1px solid #fff;
 }
+
 article p{
     display: block;
     margin: 15px auto;
     width: 95%;
     text-align: justify;
 }
+
 article .ability-icon{
     width: 17px;
     margin-right: 5px;
 }
+
 section h2{
     margin: 0 0 15px 0;
 }
 
 
+/* Gallery Settings */
 
+
+#mobile-gallery article p{
+    font-size: 1.5em;
+    text-align: center;
+    width: fit-content;
+    border-bottom: 1px double #FFE8FF;
+}
+
+#mobile-gallery article{
+    margin-bottom: 50px;
+}
+
+    /* Carousel CSS */
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* display:none; */
+    /* TO DISPLAY AFTER 1000px */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+#custCarousel .carousel-indicators {
+    position: static;
+    margin-top: 10px;
+}
+
+#custCarousel .carousel-indicators>li {
+    width: 100px;
+}
+
+#custCarousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5;
+}
+
+#custCarousel .carousel-indicators li.active img {
+    opacity: 1;
+}
+
+#custCarousel .carousel-indicators li:hover img {
+    opacity: 0.75;
+}
+
+.carousel-item img {
+    width: 90%;
+}
+
+.carousel-nametag{
+    margin-top: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    width: fit-content;
+    border-bottom: 1px double #FFE8FF;
+}
 /* Footer Settings */
 
 footer{
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(255,255,255, 0.4);
 }
+
 footer section{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 footer p{
     padding-top: 5px;
-    padding-bottom: 5px;
+    margin-bottom: 0 !important;
     text-align: center;
     font-size: 17px;
     color:#566E8E;
