@@ -14,8 +14,7 @@ html{
 }
 
 body{
-    font-family: 'Crete Round';
-    background: rgb(121,86,93);
+    font-family: 'Crete Round' !important;
     background: linear-gradient(355deg, rgba(121,86,93,1) 0%, rgba(110,79,88,1) 4%, rgba(106,77,87,1) 9%, rgba(86,110,142,1) 28%, rgba(79,67,91,1) 70%, rgba(78,60,76,1) 91%);
 }
 
@@ -60,7 +59,8 @@ header hgroup{
 #home-header-background,
 #lore-header-background,
 #skins-header-background,
-#coaching-header-background
+#coaching-header-background,
+#thankyou-header-background
 {
     background-image: url(images/Sona-min.jpg);
     background-size: cover;
@@ -77,24 +77,41 @@ header hgroup{
     background-position:top right;
     background-position: 70% 80%;
 }
+
 #coaching-header-background{
     background-image: url(images/SonaCoaching.jpg);
 }
+
+#thankyou-header-background{
+    background-image: url(images/SonaThankYou.jpeg);
+
+}
+
+.thankyou-h2-mobile{
+    font-style: normal;
+    text-shadow: none;
+    color:#4f3f52;
+    padding-top:25em;
+}
+
+.thankyou-h2-mobile h2{
+    
+    color:#4f3f52;
+    -webkit-text-stroke: 1px #fff;
+}
+
 
 /* Nav Settings */
 
 
 .main-nav{
-    background: rgb(121,86,93);
-    background: linear-gradient(162deg, rgba(121,86,93,1) 0%, rgba(110,79,88,1) 10%, rgba(106,77,87,1) 18%, rgba(79,61,76,1) 38%, rgba(79,67,91,1) 96%, rgba(78,60,76,1) 100%);
     text-align: center;
+    z-index: 10;
 }
 
 .main-nav ul{
     padding: 10px;
     padding-top: 25px;
-    
-    
 }
 
 .main-nav ul li{
@@ -113,6 +130,9 @@ header hgroup{
     color: white;
 }
 
+.skins-nav-li-fix{
+    width: 86% !important;
+}
 
 /* Section Settings */
 
@@ -165,7 +185,7 @@ section h2{
 .container {
     margin-top: 100px;
     margin-bottom: 100px;
-    /* display:none; */
+    display:none;
     /* TO DISPLAY AFTER 1000px */
 }
 
@@ -179,7 +199,7 @@ section h2{
     margin-top: 10px;
 }
 
-#custCarousel .carousel-indicators>li {
+#custCarousel .carousel-indicators> li {
     width: 100px;
 }
 
@@ -207,6 +227,56 @@ section h2{
     width: fit-content;
     border-bottom: 1px double #FFE8FF;
 }
+
+
+/* Coaching Settings */
+
+
+form{
+    width: 70%;
+    margin: 40px auto;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+}
+
+form label{
+    font-size: 1.5em;
+    color:#FFE8FF;
+}
+
+form input[type=text], select, input[type=date],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+ 
+form textarea{
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+form input[type=submit], input[type=reset] {
+    background-color: #6586B2;
+    color: #FFE8FF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+  
+form input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #FFE8FF;
+    color:#4F3F52;
+}
+
+
 /* Footer Settings */
 
 footer{
@@ -224,4 +294,57 @@ footer p{
     text-align: center;
     font-size: 17px;
     color:#566E8E;
+}
+
+@media screen and (min-width:768px) {
+
+
+/* Nav Settings */
+
+
+.main-nav{
+    overflow: hidden;
+    display: block;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.main-nav ul{
+    padding: 30px 15px;
+    margin-bottom: 0;
+    
+}
+
+.main-nav ul li{
+    display:inline-block;
+    width: 15%;
+    margin: 0 15px;
+    background-color: rgb(79,137,164);    
+}
+
+.skins-nav-li-fix{
+    width: 18.55% !important;
+}
+
+.content {
+    padding-top: 16px;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+main section{
+    margin-top: 15px;
+}
+
+
+
+}
+
+@media screen and (min-width:992px) {
+    
 }
