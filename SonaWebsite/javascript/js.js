@@ -53,20 +53,3 @@ function Validate(){
 
     return true;
 }
-
-
-// Sticky
-
-
-// window.onscroll = function() {sticky()};
-
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function sticky() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }

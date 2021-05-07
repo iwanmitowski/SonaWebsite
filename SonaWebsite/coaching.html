@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <div clas="main-container">
         <header class="main-header" id="coaching-header-background">
             <hgroup>
@@ -32,10 +33,11 @@
             <li><a href="coaching.html">Coaching</a></li>
         </ul>
     </nav>
-    <main>
-        
-        <section class="content">
-            <form action="thankyou.html" method="POST">
+
+    <main id="coaching-main">
+
+        <section id="coaching-section">
+            <form method="POST">
                 <label for="name">Name</label>
                 <input type="text" name="name" placeholder="Name" required id="fName">
 
@@ -46,7 +48,7 @@
                 <input type="text" name="nickname" placeholder="Nickname" required id="fNickname">
 
                 <label for="email">Email</label>
-                <input type="email"  name="email" placeholder="Example@email.com" required id="fEmail">
+                <input type="email" name="email" placeholder="Example@email.com" required id="fEmail">
 
                 <label for="current-division">Current Division</label>
                 <select name="current-division" id="fCurrentDivision">
@@ -79,19 +81,45 @@
                 <a href="thankyou.html">
                     <input type="submit" value="Send" onclick="Validate()">
                 </a>
-                <input type="reset" value="Clear">
             </form>
-            
+
         </section>
-        <footer>
-            <section>
-                <p>Made by Ivan Mitovski</p>
-                <p> &copy; Some rights reserved</p>
+
+        <aside id="coaching-aside">
+            <section id="about-intowski">
+                <h3>About Intowski</h3>
+                <p>&#11088; Sona enthusiast</p>
+                <p>&#11088; Plays league since season 4</p>
+                <p>&#11088; Current rank - Diamond II </p>
+                <p>&#11088; Rank peak - Grandmaster</p>
+                <p>&#11088; Average support enjoyer</p>
             </section>
-        </footer>
+
+            <section id="intowski-accounts">
+                <h3>Intowski Accounts</h3>
+                <p>&#127932; EUNE - <strong><a href="">Intowski</a></strong></p>
+                <p>&#127932; EUW - <strong><a href="">Pentakill Sona</a></strong></p>
+                
+            </section>
+        </aside>
 
     </main>
-    
-    
+
+    <footer>
+
+        <section class="copyright">
+            <p>Made by Ivan Mitovski</p>
+            <p> &copy; Some rights reserved</p>
+        </section>
+        <section class="socials">
+
+            <a href="https://www.instagram.com/"><img src="images/instagramicon.svg"></a>
+            <a href="https://www.facebook.com/"><img src="images/fbicon.svg"></a>
+            <a href="https://github.com/iwanmitowski"><img src="images/githubicon.svg"></a>
+           
+        </section>
+
+    </footer>
+
 </body>
 </html>

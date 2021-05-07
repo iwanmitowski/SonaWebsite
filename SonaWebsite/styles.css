@@ -24,24 +24,25 @@ p{
 
 h1{
     font-size:3.5em;
-    color:white;
+    color:#fff;
     text-align: center;
     text-shadow: 2px 2px 5px black;
 }
 
 h2{
     font-size: 2.4em;
-    color:white;
+    color:#fff;
     text-align: center;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px #000;
 }
 
 h3{
     font-size: 1.5em;
-    color:white;
+    color:#fff;
     text-align: center;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px #000;
 }
+
 
 
 /* Header Settings */
@@ -116,23 +117,37 @@ header hgroup{
 
 .main-nav ul li{
     list-style-type: none;
-    border: 1px solid white;
+    border: 1px solid #fff;
     border-radius: 10px;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 10px;
     padding:15px;
     background-color: rgba(79,137,164,0.5);
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px #000;
 }
 
 .main-nav ul li a{
-    color: white;
+    color: #FFE8FF;
+    font-size: 1.3em;
+    display: block;
+}
+
+.main-nav ul li:hover{
+    border-color: #4F3F52;
+    box-shadow: 1px 1px 5px #fff;
+    color:#4F3F52;
+    background-color: #FFE8FF;
+}
+
+.main-nav ul li:hover a{
+  color: #4F3F52;
 }
 
 .skins-nav-li-fix{
     width: 86% !important;
 }
+
 
 /* Section Settings */
 
@@ -165,6 +180,10 @@ section h2{
     margin: 0 0 15px 0;
 }
 
+#lore-aside{
+    display: none;
+}
+
 
 /* Gallery Settings */
 
@@ -182,11 +201,10 @@ section h2{
 
     /* Carousel CSS */
 
-.container {
+.gallery-container {
     margin-top: 100px;
     margin-bottom: 100px;
-    display:none;
-    /* TO DISPLAY AFTER 1000px */
+    display: none;
 }
 
 .carousel-inner img {
@@ -236,7 +254,7 @@ form{
     width: 70%;
     margin: 40px auto;
     border-radius: 5px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.4);
     padding: 20px;
 }
 
@@ -261,7 +279,7 @@ form textarea{
     max-height: 300px;
 }
 
-form input[type=submit], input[type=reset] {
+form input[type=submit] {
     background-color: #6586B2;
     color: #FFE8FF;
     padding: 12px 20px;
@@ -269,11 +287,45 @@ form input[type=submit], input[type=reset] {
     border-radius: 4px;
     cursor: pointer;
     margin-right: 10px;
+    font-size: 1.05em;
+    width: 100px;
 }
   
-form input[type=submit]:hover, input[type=reset]:hover {
+form input[type=submit]:hover{
     background-color: #FFE8FF;
     color:#4F3F52;
+}
+
+
+#about-intowski{
+    margin-bottom: 40px;
+}
+
+#coaching-aside{
+    margin:55px auto;
+    vertical-align: top;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding:20px 5px;
+    width: 50%;
+    text-align: left;
+}
+
+#coaching-aside p a{
+    font-size: 1.1em;
+}
+
+#coaching-aside p{
+    margin: 15px;
+    margin-left: 30px;
+}
+
+#coaching-aside a{
+    color: #fff;
+}
+
+#coaching-aside a:hover{
+    text-decoration: underline;
 }
 
 
@@ -281,11 +333,14 @@ form input[type=submit]:hover, input[type=reset]:hover {
 
 footer{
     background-color: rgba(255,255,255, 0.4);
+    text-align: center;
 }
 
 footer section{
     padding-top: 15px;
     padding-bottom: 15px;
+    display: inline-block;
+    margin: 0 15%;
 }
 
 footer p{
@@ -295,6 +350,25 @@ footer p{
     font-size: 17px;
     color:#566E8E;
 }
+
+.copyright .socials{
+    width: 50%;
+}
+
+footer img{
+    width: 32px;
+    height: 32px;
+    padding: 0 2.5px;
+}
+
+.socials{
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive */
+
 
 @media screen and (min-width:768px) {
 
@@ -308,7 +382,7 @@ footer p{
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.4);
 }
 
 .main-nav ul{
@@ -332,10 +406,10 @@ footer p{
     padding-top: 16px;
 }
 
+
 .sticky + .content {
     padding-top: 60px;
 }
-
 
 main section{
     margin-top: 15px;
@@ -346,5 +420,130 @@ main section{
 }
 
 @media screen and (min-width:992px) {
+
+
+/* Nav Settings */
+
+
+.main-nav ul li a{
+       font-size: 1.1em;
+}
+
+
+/* Section Settings */
+
+
+#index-section{
+    text-align:center;
+    padding-bottom: 0;
+}
+
+#index-section article{
+    display: inline-block;
+    width: 45%;
+    margin:0 10px;
+    vertical-align: middle;
+}
+
+#index-section article:first-of-type{
+    margin: 0 auto;
+    display:block;
+    text-align:center;
+
+}
+
+#index-section article p{
+    height: 100px;
+    padding-bottom: 10px;
+}
+
+#mobile-gallery{
+    display: none;
+}
+
+#skins-nav{
+    position: inherit;
+}
+
+.gallery-container{
+    display:block;
+}
+
+.carousel-indicators{
+    visibility:hidden;
+}
+
+#lore-main{
+    padding:0 auto;
+    text-align: center;
+}
+
+#lore-section, #lore-aside{
+    display: inline-block;
     
+}
+
+#lore-section{
+    padding:20px 0;
+    width: 45%;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+#lore-aside{
+    margin:15px;
+    vertical-align: top;
+    width: 20%;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding:20px 10px;
+}
+
+#lore-aside p{
+    text-align: left;
+    margin: 15px;
+    
+
+}
+
+#coaching-main{
+    padding:0 auto;
+
+}
+
+#coaching-section, #coaching-aside{
+    display: inline-block;
+}
+
+#coaching-section{
+    width: 60%;
+}
+
+#coaching-aside{
+    width: 30%;
+}
+
+#about-intowski{
+    margin-bottom: 40px;
+}
+
+#coaching-aside p a{
+text-align: center;
+    font-size: 1.1em;
+}
+
+#coaching-aside p{
+    margin: 15px;
+    margin-left: 30px;
+}
+
+#coaching-aside a{
+    color: #fff;
+}
+
+#coaching-aside a:hover{
+    text-decoration: underline;
+}
+
 }
