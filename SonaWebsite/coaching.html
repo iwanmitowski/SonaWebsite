@@ -9,21 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="styles.css">
+    <script src="javascript/js.js"></script>
     <title>Sona - Maven of the strings</title>
 </head>
-
 <body>
-
-    <div clas="main-container">
-        <header class="main-header" id="coaching-header-background">
-            <hgroup>
-                <h1>Professional</h1>
-                <h1>Sona Coaching</h1>
-                <h2>by Intowski</h2>
-            </hgroup>
-    </div>
-
-    </header>
+    <div class="main-container">
+    <header class="main-header" id="coaching-header-background">
+        <hgroup>
+            <h1>Professional</h1>
+            <h1>Sona Coaching</h1>
+            <h2>by Intowski</h2>
+        </hgroup>
+    </header>   
 
     <nav class="main-nav sticky" id="coaching-nav">
         <ul>
@@ -35,22 +32,21 @@
     </nav>
 
     <main id="coaching-main">
-
         <section id="coaching-section">
             <form method="POST">
-                <label for="name">Name</label>
+                <label for="fName">Name</label>
                 <input type="text" name="name" placeholder="Name" required id="fName">
 
-                <label for="surname">Surname</label>
+                <label for="fSurname">Surname</label>
                 <input type="text" name="surname" placeholder="Surname" required id="fSurname">
 
-                <label for="nickname">Nickname</label>
+                <label for="fNickname">Nickname</label>
                 <input type="text" name="nickname" placeholder="Nickname" required id="fNickname">
 
-                <label for="email">Email</label>
+                <label for="fEmail">Email</label>
                 <input type="email" name="email" placeholder="Example@email.com" required id="fEmail">
 
-                <label for="current-division">Current Division</label>
+                <label for="fCurrentDivision">Current Division</label>
                 <select name="current-division" id="fCurrentDivision">
                     <option value="iron">Iron</option>
                     <option value="bronze">Bronze</option>
@@ -62,7 +58,7 @@
                     <option value="challenger">Challenger</option>
                 </select>
 
-                <label for="desired-division">Desired Division</label>
+                <label for="fDesiredDivision">Desired Division</label>
                 <select name="desired-division" id="fDesiredDivision">
                     <option value="iron">Iron</option>
                     <option value="bronze">Bronze</option>
@@ -74,18 +70,16 @@
                     <option value="challenger">Challenger</option>
                 </select>
 
-                <label for="deadline">Deadline</label>
-                <input type="date" name="deadline" placeholder="Deadline" required id="fDeadline">
+                <label for="fDeadline">Deadline</label>
+                <input type="date" name="deadline" required id="fDeadline">
 
                 <textarea name="details" placeholder="Additional details..."></textarea>
-                <a href="thankyou.html">
-                    <input type="submit" value="Send" onclick="Validate()">
-                </a>
-            </form>
+                <input type="submit" value="Send" onclick="Validate()">
 
+            </form>
         </section>
 
-        <aside id="coaching-aside">
+        <aside class="coaching-aside">
             <section id="about-intowski">
                 <h3>About Intowski</h3>
                 <p>&#11088; Sona enthusiast</p>
@@ -99,27 +93,31 @@
                 <h3>Intowski Accounts</h3>
                 <p>&#127932; EUNE - <strong><a href="">Intowski</a></strong></p>
                 <p>&#127932; EUW - <strong><a href="">Pentakill Sona</a></strong></p>
-                
+            </section>
+            
+            <section>
+                <h3>Pricing</h3>
+                <p>&#128176; For each division - 5 lv.</p>
+                <p>&#128176; Current week - 50 lv.</p>
+                <p>&#128176; Following weeks - 25 lv.</p>
             </section>
         </aside>
 
+        <img src="images/musicalnotes.png" class="notes static-note" alt="Musical notes" id="right-note">
+        <img src="images/musicalnotes.png" class="notes static-note" alt="Musical notes" id="left-note">
     </main>
 
     <footer>
-
         <section class="copyright">
             <p>Made by Ivan Mitovski</p>
             <p> &copy; Some rights reserved</p>
         </section>
         <section class="socials">
-
-            <a href="https://www.instagram.com/"><img src="images/instagramicon.svg"></a>
-            <a href="https://www.facebook.com/"><img src="images/fbicon.svg"></a>
-            <a href="https://github.com/iwanmitowski"><img src="images/githubicon.svg"></a>
-           
+            <a href="https://www.instagram.com/"><img src="images/instagramicon.svg" alt="Instagram icon"></a>
+            <a href="https://www.facebook.com/"><img src="images/fbicon.svg" alt="Facebook icon"></a>
+            <a href="https://github.com/iwanmitowski"><img src="images/githubicon.svg" alt="Github icon"></a>
         </section>
-
     </footer>
-
+</div>
 </body>
 </html>
