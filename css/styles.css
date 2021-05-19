@@ -63,28 +63,28 @@ header hgroup{
 #coaching-header-background,
 #thankyou-header-background
 {
-    background-image: url(images/Sona-min.jpg);
+    background-image: url(../images/Sona-min.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #lore-header-background{
-    background-image: url(images/SonaShow.jpg);
+    background-image: url(../images/SonaShow.jpg);
 }
 
 #skins-header-background{
-    background-image: url(images/SonaSkins.jpg);
+    background-image: url(../images/SonaSkins.jpg);
     background-position:top right;
     background-position: 70% 80%;
 }
 
 #coaching-header-background{
-    background-image: url(images/SonaCoaching.jpg);
+    background-image: url(../images/SonaCoaching.jpg);
 }
 
 #thankyou-header-background{
-    background-image: url(images/SonaThankYou.jpeg);
+    background-image: url(../images/SonaThankYou.jpeg);
 
 }
 
