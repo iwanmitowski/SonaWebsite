@@ -253,6 +253,7 @@ section h2{
     margin-top: 15px;
     font-size: 1.5em;
     text-align: center;
+    margin:0 auto;
     width: fit-content;
     border-bottom: 1px double #FFE8FF;
 }
