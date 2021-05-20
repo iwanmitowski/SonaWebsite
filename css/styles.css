@@ -56,17 +56,20 @@ header hgroup{
 .main-header{
     height: 100vh;
 }
-
 #home-header-background,
 #lore-header-background,
 #skins-header-background,
 #coaching-header-background,
 #thankyou-header-background
 {
-    background-image: url(../images/Sona-min.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#home-header-background{
+    background-image: url(../images/Sona-min.jpg);
+    background-position: 56% 70%;
 }
 
 #lore-header-background{
@@ -315,7 +318,7 @@ form input[type=submit]:hover{
     background-color: rgba(255,255,255,0.2);
     border-radius: 10px;
     padding:20px 5px;
-    width: 50%;
+    width: 60%;
     text-align: left;
 }
 
@@ -433,7 +436,9 @@ main section{
     margin-top: 15px;
 }
 
-
+.coaching-aside{
+    width: 40%;
+}
 
 }
 
@@ -683,7 +688,7 @@ main section{
 }
 
 .coaching-aside{
-    width: 18%;
+    width: 20%;
 }
 
 #coaching-section{
