@@ -44,7 +44,6 @@ h3{
 }
 
 
-
 /* Header Settings */
 
 
@@ -56,6 +55,7 @@ header hgroup{
 .main-header{
     height: 100vh;
 }
+
 #home-header-background,
 #lore-header-background,
 #skins-header-background,
@@ -160,7 +160,7 @@ main article{
     width: 80%;
 }
 
-article figure img{
+article figure video, article figure img{
     display: block;
     margin: 15px auto;
     width: 100%;
@@ -308,7 +308,6 @@ form input[type=submit]:hover{
     color:#4F3F52;
 }
 
-
 #about-intowski{
     margin-bottom: 40px;
 }
@@ -343,7 +342,6 @@ form input[type=submit]:hover{
 .pricing{
     display: none;
 }
-
 
 
 /* Footer Settings */
@@ -520,6 +518,10 @@ main section{
 
 }
 
+
+/* Coaching Settings */
+
+
 #coaching-main{
     padding:0;
 }
@@ -593,6 +595,7 @@ main section{
 .carousel-indicators{
     visibility:hidden;
 }
+
 }
 
 
@@ -610,6 +613,10 @@ main section{
 #lore-section{
     width: 50%;
 }
+
+
+/* Gallery Settings */
+
 
 .gallery-container{
     width: 80%;
@@ -661,6 +668,7 @@ main section{
 
 /* Section Settings */
 
+
 #lore-section{
  width: 55%;   
 }
@@ -684,6 +692,10 @@ main section{
     left: 70px;
 }
 
+
+/* Coaching Settings */
+
+
 #coaching-main{
     text-align: center;
 }
@@ -696,4 +708,5 @@ main section{
     width: 40%;
     text-align: left;
 }
+
 }
