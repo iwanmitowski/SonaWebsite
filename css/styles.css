@@ -125,7 +125,6 @@ header hgroup{
     width: 80%;
     margin: 0 auto;
     margin-bottom: 10px;
-    padding:15px;
     background-color: rgba(79,137,164,0.5);
     box-shadow: 1px 1px 5px #000;
 }
@@ -133,6 +132,7 @@ header hgroup{
 .main-nav ul li a{
     color: #FFE8FF;
     font-size: 1.3em;
+    padding:15px;
     display: block;
 }
 
@@ -146,11 +146,6 @@ header hgroup{
 .main-nav ul li:hover a{
   color: #4F3F52;
 }
-
-.skins-nav-li-fix{
-    width: 86% !important;
-}
-
 
 /* Section Settings */
 
@@ -414,10 +409,6 @@ footer img{
     background-color: rgb(79,137,164);    
 }
 
-.skins-nav-li-fix{
-    width: 18.55% !important;
-}
-
 
 /* Section settings */
 
@@ -659,10 +650,6 @@ main section{
         width: 10%;
         margin: 0 15px;
         background-color: rgb(79,137,164);    
-}
-    
-.skins-nav-li-fix{
-    width: 12% !important;
 }
    
 
