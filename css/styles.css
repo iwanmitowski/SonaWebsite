@@ -3,6 +3,7 @@
     margin:0px;
     list-style: none;
 	text-decoration: none;
+    box-sizing:content-box;
 }
 
 
@@ -442,9 +443,9 @@ main section{
        font-size: 1.1em;
 }
 
-
 #skins-nav{
     position: inherit;
+    line-height: 1.375em;
 }
 
 
@@ -649,7 +650,7 @@ main section{
         display:inline-block;
         width: 10%;
         margin: 0 15px;
-        background-color: rgb(79,137,164);    
+        background-color: rgb(79,137,164); 
 }
    
 
@@ -685,6 +686,7 @@ main section{
 
 #coaching-main{
     text-align: center;
+    margin-right:4.5%;
 }
 
 .coaching-aside{
@@ -694,6 +696,7 @@ main section{
 #coaching-section{
     width: 40%;
     text-align: left;
+    margin:0 auto;
 }
 
 }
