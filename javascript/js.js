@@ -1,9 +1,9 @@
 function Validate(){
     var nameValue = document.getElementById("fName").value;
-    var namePattern = /^([A-Z][a-z]+(-[A-Z])?[a-z]+)$/;
+    var namePattern = /^([A-Я][a-я]+(-[A-Я])?[a-я]+)$/;
     
     var surnameValue = document.getElementById('fSurname').value;
-    var surnamePattern = /^([A-Z][a-z]+)$/;
+    var surnamePattern = /^([A-Я][a-я]+)$/;
     
     var nicknameValue = document.getElementById('fNickname').value;
     
@@ -39,7 +39,7 @@ function Validate(){
 
     if(currentDivisionValue==desiredDivisionValue){
 
-        alert("Choose division to be coached to different from the current one, darling!")
+        alert("Choose division to be coached to which is different from the current one, darling!")
 
         return false;
     }
